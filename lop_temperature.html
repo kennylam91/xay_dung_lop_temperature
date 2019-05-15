@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xay dung lop temperature</title>
+</head>
+<body>
+<script>
+    function Temperature(celcius){
+        this.celcius=celcius;
+        this.convertToF=function(){
+            return this.celcius*1.8+32;
+        }
+        this.convertToK=function(){
+            return this.celcius+273.15;
+        }
+    }
+    temper=new Temperature(25);
+    alert("do F= "+temper.convertToF()+", do K= " + temper.convertToK());
+
+</script>
+</body>
+</html>
